@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+#ContenedorPrincipal{
+  background-color: #FFF;
+}
+#barra{   
+  position: fixed;                                                                         
+  height: 42px;
+  width: 100%;
+  background-color: #23282D;
+  border-bottom: 1px solid #000;
+}
+#cuerpo{
+  display: inline-block;
+  width: 100%;
+}
+  #barraiz{
+  margin-top: 42px;
+  float: left;
+  margin-left: 0;
+  height:1000px; 
+  width:15%;
+  background-color: #23282D;
+}
+  #centro{
+  margin-top: 42px;
+  float: right;
+  width: 85%;
+  min-height: 1000px;
+  background-color: #fff;
+}
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+  position:fixed;
+  z-index:1000;
+  top:0;
+  width:100%;
+  border-top: 1px solid #000;
+}
+.avatar_img{
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  width: 100.8px;
+  height: 100.8px;
+  border-width: 5px !important;
+  border-color: #072936 !important;
+}
+.container-generate{
+  display: block;
+}
+.perfil{
+  display: none;
+}
+#contenidobar{
+   margin: 0 auto;
+   text-align: center;
+}
+.tiptitle{
+  font-family: 'Bubblegum Sans', cursive;
+  color:#fff;
+  text-shadow: rgba(0,0,0,0.5) 0px 3px 3px;
+}
+.editarperfil {
+    width: 65%;
+    padding: 20px 25px;
+}
+.editarperfil h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc
+}
+legend {
+    color: #7b7a7a;
+}
+fieldset {
+    background: #f7f7f7;
+    padding: 5px 25px;
+    width: 35%;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-left: 16px;
+    margin-top: 25px;
+}
+input[type="button"] {
+    float: right; 
+    margin-right: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 4px 10px;
+}
+.editarperfil label, input{
+  display: block;
+
+}
+.editarperfil label{
+  margin-top: 10px;
+
+}
+input[type="text"], input[type="email"] {
+    height: 31px;
+    width: 246px;
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 0 transparent inset;
+    -webkit-transition: color .1s ease,border-color .1s ease;
+    transition: color .1s ease,border-color .1s ease;
+    margin: 0;
+    outline: 1;
+    -webkit-appearance: none;
+    tap-highlight-color: rgba(255,255,255,0);
+    padding: 0px 5px;
+}
+.editarperfil label {
+    font-size: 12px;
+    color: #333;
+}
+
+.btn-register-home:hover {
+    background-color: #46629E;
+    padding: 30px 80px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s;
+}
+.btn-register-home {
+    background-color: #4463b1;
+    padding: 20px 60px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s;
+    }
+
+.adspoint{
+  display: block;
+}
+.editarperfil{
+  display: none;
+}
+#validation{
+  display: none;
+}

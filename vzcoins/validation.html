@@ -36,7 +36,7 @@
     <script>
       var confirmation = document.referrer;
       
-      if( confirmation === "http://adf.ly/1eW9rK"){
+      if( confirmation === "http://localhost/geemuz-site-gh-pages/index.html"){
            $('#loader-wrapper').css('display', 'none') && $('#validation').css('display', 'block');
       
       }else{
@@ -44,6 +44,23 @@
           console.log("no paso la validation");
           setTimeout(function () {
           }, 1000);
+      }
+      var on = $('#validation').css('display');
+      if(on === "block"){
+    var config = {
+    apiKey: "AIzaSyC4omVAFkjnXTHNI9Gr7t-pSE8-Q1gEUd4",
+    authDomain: "ingresar-652f2.firebaseapp.com",
+    databaseURL: "https://ingresar-652f2.firebaseio.com",
+    storageBucket: "ingresar-652f2.appspot.com",
+    messagingSenderId: "402603559600"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database();
+    var ref = database.ref(email);
+    ref.on("value", function(snapshot, prevChildKey) {
+    var newPost = snapshot.val();
+      var nombre = newPost.name;
+        console.log(name + "bien");
       }
     </script>
   </body>

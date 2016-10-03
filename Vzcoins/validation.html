@@ -1,0 +1,50 @@
+<!DOCTYPE html><!--[if IE 8]><html lang="es" class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><![endif]-->
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Valeria Modz</title>
+    <meta name="description" content="descripciones">
+    <meta name="keywords" content="valores">
+    <meta name="author" content="">
+    <meta property="og:title" content="Valeria Modz">
+    <meta property="og:description" content="El Mejor Mod de Audition Latino, ¿Qué esperas para descargarlo?">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://geemuz.com/valeaudmodz/">
+    <meta property="og:image" content="http://geemuz.com/valeaudmodz/static/images/fb-share.png">
+    <meta name="theme-color" content="#8cb71b">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/style3.css">
+    <link rel="stylesheet" href="static/css/style2.css"><!--[if lte IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <input id="identify" type="hidden" data-controller="home" data-action="">
+    <div id="loader-wrapper">
+      <div id="loader">
+      </div>
+      <div><h1 style="align: center;">Por favor observe los anuncios correspondientes</h1></div>
+    </div>
+    <div id="validation"><h1>Hola</h1></div>
+    <script src="static/js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="static/js/application.js"></script>
+
+    <script>
+      var confirmation = document.referrer;
+      
+      if( confirmation === "http://localhost/geemuz-site-gh-pages/index.html"){
+           $('#loader-wrapper').css('display', 'none') && $('#validation').css('display', 'block');
+      
+      }else{
+      
+          console.log("no paso la validation");
+          setTimeout(function () {
+          }, 1000);
+      }
+    </script>
+  </body>
+</html>

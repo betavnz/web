@@ -1,0 +1,13 @@
+//guardar
+database.ref(name).update({
+        name: name,
+        correo: photoFacebook,
+        saldo: saldo
+        });
+
+// llamar
+ var ref = database.ref(name);
+ ref.on("value", function(snapshot, prevChildKey) {
+         var newPost = snapshot.val();
+          saldo = newPost.saldo;
+          });
